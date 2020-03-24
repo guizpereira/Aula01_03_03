@@ -1,0 +1,3 @@
+module PaisWeb {
+	requires junit;
+}
