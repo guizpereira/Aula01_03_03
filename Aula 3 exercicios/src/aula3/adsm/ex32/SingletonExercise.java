@@ -74,6 +74,7 @@ class Deck {
 			card.print( );
 		}
 	}
+	
 	private List<Card> cards;
 	
 	private static Deck singletonInstance;

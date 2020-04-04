@@ -6,9 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
 
-
-
-
 public class TestePizzaria {
 	public static void main(String[] args) {
 		String inputData = JOptionPane.showInputDialog(null, "Informe uma data no formato dd/mm/yyyy");
