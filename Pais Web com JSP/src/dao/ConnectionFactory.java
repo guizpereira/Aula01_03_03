@@ -13,10 +13,10 @@ public class ConnectionFactory {
 		}
 	}
 	
-	// Obtem conexção com o banco de dados
+	// Obtem conexÃ§Ã£o com o banco de dados
 	public static Connection obtemConexao() throws SQLException {
 		return DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/mundo?useTimezone=true&serverTimezone=America/Sao_Paulo&user=root&password=7849516230Ee");
+				.getConnection("jdbc:mysql://localhost:3306/mundo?useTimezone=true&serverTimezone=America/Sao_Paulo&user=guilherme&password=123qwe");
 	}
 
 }
