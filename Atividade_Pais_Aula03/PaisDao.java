@@ -16,7 +16,7 @@ public class PaisDao {
 		}
 	}
 	public static Connection obtemConexao() throws SQLException {
-		return DriverManager.getConnection("jdbc:mysql://localhost:3306/pais?useTimezone=true&serverTimezone=America/Sao_Paulo&user=aluno&password=123qwe");
+		return DriverManager.getConnection("jdbc:mysql://localhost:3306/pais?useTimezone=true&serverTimezone=America/Sao_Paulo&user=guilherme&password=123qwe");
 	}
 	public static void criar(String nomepais, long populacaopais, double areapais) {
 		String sqlInsert = "INSERT INTO pais(nomepais, populacaopais, areapais) VALUES (0, 0, 0)";
