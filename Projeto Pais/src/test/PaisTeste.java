@@ -16,17 +16,6 @@ public class PaisTeste {
 	Pais pais, copia;
 	PaisService paisService;
 	static int id = 0;
-
-	/*
-	 * Antes de rodar este teste, certifique-se que nao ha no banco nenhuma
-	 * linha com o id igual ao do escolhido para o to instanciado abaixo. Se
-	 * houver, delete. 
-	 * Certifique-se também que sobrecarregou o equals na classe
-	 * Cliente. 
-	 * Certifique-se que a fixture cliente1 foi criada no banco.
-	 * Além disso, a ordem de execução dos testes é importante; por
-	 * isso a anotação FixMethodOrder logo acima do nome desta classe
-	 */
 	
 	@Before
 	public void setUp() throws Exception {
@@ -107,7 +96,7 @@ public class PaisTeste {
 	
 	@Test
 	public void test05PaisMenor() {
-		System.out.println("Busca do pa�s menor");
+		System.out.println("Busca do país menor");
 		System.out.println(paisService.menorArea());
 		System.out.println("----------------------------------------------------------------------");
 	}
