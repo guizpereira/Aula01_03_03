@@ -1,7 +1,6 @@
 package br.usjt.SpringBootLab.model;
 
 import java.io.Serializable;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,11 +21,10 @@ import lombok.Setter;
 public class PrevisaoDoTempo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY ) //Tipo de chave primaria (1,2,3,4,5,6...)
 	private Long id;
-	//private String diadasemana;
 	@Column (nullable=false, length=100)
 	private double temperaturamin;
 	@Column (nullable=false, length=100)
@@ -37,17 +35,13 @@ public class PrevisaoDoTempo implements Serializable {
 	private String data;
 	@Column (nullable=false, length=100)
 	private String hora;
-	//@Column (nullable=false, length=100)
-	//private String latitude;
-	//@Column (nullable=false, length=100)
-	//private String longitude;
 	@Column (nullable=false, length=100)
 	private String descricao;
-	
+
 	@OneToOne (optional = false)
 	@JoinColumn (name = "diadasemana")
 	private DiasDaSemana diadasemana;
-	
+
 	@ManyToOne (cascade = CascadeType.ALL)
 	private Cidade cidade;
 }

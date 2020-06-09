@@ -17,7 +17,7 @@ public class PrevisaoDoTempoController {
 	//private PrevisaoDoTempoRepository previsaoDoTempoRepo;
 	@Autowired
 	private PrevisaoDoTempoService previsaoService;
-	
+
 
 	@GetMapping("/previsoes")
 	public ModelAndView listarPrevisoes() {

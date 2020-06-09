@@ -9,8 +9,7 @@ import br.usjt.SpringBootLab.Interceptor.LoginInterceptor;
 
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
-
-
+	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(
@@ -18,6 +17,6 @@ public class AppConfig implements WebMvcConfigurer {
 		addPathPatterns("/**").
 		excludePathPatterns("/login", "/", "/fazerLogin", "/bootstrap/**", "/webjars/**");
 	}
-	
-	
+
+
 }

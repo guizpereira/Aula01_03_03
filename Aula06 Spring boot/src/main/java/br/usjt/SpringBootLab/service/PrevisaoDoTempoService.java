@@ -10,11 +10,11 @@ import br.usjt.SpringBootLab.repository.PrevisaoDoTempoRepository;
 public class PrevisaoDoTempoService {
 	@Autowired
 	private PrevisaoDoTempoRepository previsaoDoTempoRepo;
-	
+
 	public void salvar (PrevisaoDoTempo previsao) {
 		previsaoDoTempoRepo.save(previsao);
 	}
-	
+
 	public List <PrevisaoDoTempo> listarTodos(){
 		return previsaoDoTempoRepo.findAll();
 	}
